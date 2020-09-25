@@ -22,7 +22,7 @@ async function checkQueue() {
 async function createMatch(userOne, userTwo) {
     const matchLogger = new Signale({
         interactive: true,
-        scope: 'Dismegle'
+        scope: 'DiscordOmegle'
     });
 
     matchLogger.await('Getting info...');
