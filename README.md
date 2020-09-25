@@ -1,4 +1,4 @@
-# Dismegle
+# Discord Omegle
 A Discord Omegle bot made in node.js. Talk to a random user in a different Discord server over voice chat.
 ## Requirements
 * node.js (I used v12.18.1)
