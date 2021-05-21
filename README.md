@@ -6,7 +6,7 @@ A Discord bot to match with users across other servers.
 * node-opus (v0.3.3)
 * signale (v1.4.0)
 
-## 🏗️ Building
+## 🔌 Installation
 ```
 npm i
 ```
