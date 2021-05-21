@@ -2,9 +2,6 @@
 A Discord bot to match with users across other servers. 
 ## 🧳 Requirements
 * node.js (I used v12.18.1)
-* discord.js (v12.3.1)
-* node-opus (v0.3.3)
-* signale (v1.4.0)
 
 ## 🔌 Installation
 ```
