@@ -1,15 +1,18 @@
+// Packages
+const Discord = require('discord.js');
+const { Signale } = require('signale');
+
+// Config
 const {
     token,
     prefix
 } = require('./config.json');
-const {
-    Signale
-} = require('signale');
-const Discord = require('discord.js');
-const client = new Discord.Client();
 
+// Variables
+const client = new Discord.Client();
 const queue = [];
 
+// Check queue for two users, if there are two users match them.
 async function checkQueue() {
     if (queue.length >= 2) {
         const userOne = queue.shift();
@@ -19,6 +22,7 @@ async function checkQueue() {
     }
 }
 
+// Create match between two users.
 async function createMatch(userOne, userTwo) {
     const matchLogger = new Signale({
         interactive: true,
