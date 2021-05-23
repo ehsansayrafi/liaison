@@ -1,4 +1,4 @@
-# 🎤 Discord Omegle
+# 🎤 liaison
 A Discord bot to match with users across other servers. 
 ## 🧳 Requirements
 * node.js (I used v12.18.1)
