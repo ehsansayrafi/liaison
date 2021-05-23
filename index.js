@@ -7,7 +7,6 @@ const {
     token,
     prefix
 } = require('./config.json');
-
 // Variables
 const client = new Discord.Client();
 const queue = [];
@@ -26,7 +25,7 @@ async function checkQueue() {
 async function createMatch(userOne, userTwo) {
     const matchLogger = new Signale({
         interactive: true,
-        scope: 'DiscordOmegle'
+        scope: 'liaison'
     });
 
     matchLogger.await('Getting info...');
@@ -47,12 +46,12 @@ async function createMatch(userOne, userTwo) {
 
     const userOneMemberEmbedBegin = new Discord.MessageEmbed()
         .setColor('GREEN')
-        .setTitle('Dismegle')
+        .setTitle('liaison')
         .setDescription(`Your conversation with \`${userTwoMember.user.username}#${userTwoMember.user.discriminator}\` has begun! Say hi! 👋`)
         .setTimestamp();
     const userTwoMemberEmbedBegin = new Discord.MessageEmbed()
         .setColor('GREEN')
-        .setTitle('Dismegle')
+        .setTitle('liaison')
         .setDescription(`Your conversation with \`${userOneMember.user.username}#${userOneMember.user.discriminator}\` has begun! Say hi! 👋`)
         .setTimestamp();
 
@@ -95,12 +94,12 @@ async function createMatch(userOne, userTwo) {
 
         const userOneMemberEmbedEnd = new Discord.MessageEmbed()
             .setColor('RED')
-            .setTitle('Dismegle')
+            .setTitle('liaison')
             .setDescription('Your conversation has ended!')
             .setTimestamp();
         const userTwoMemberEmbedEnd = new Discord.MessageEmbed()
             .setColor('RED')
-            .setTitle('Dismegle')
+            .setTitle('liaison')
             .setDescription('Your conversation has ended!')
             .setTimestamp();
 
@@ -117,14 +116,14 @@ async function createMatch(userOne, userTwo) {
 
 const options = {
     logLevel: 'info',
-    scope: 'Dismegle',
+    scope: 'liaison',
     stream: process.stdout
 };
 
 const logger = new Signale(options);
 const interactive = new Signale({
     interactive: true,
-    scope: 'Dismegle'
+    scope: 'liaison'
 });
 
 interactive.await('Attempting to log into Discord...');
